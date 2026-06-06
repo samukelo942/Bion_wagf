@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIONWAGF — South African Streetwear</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Bebas Neue for headings, DM Sans for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Permanent+Marker&display=swap" rel="stylesheet" />
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">BION<span>WAGF</span></a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="products.html?category=hoodies">Hoodies</a>
+        <a href="products.html?category=t-shirts">Tees</a>
+        <a href="products.html?category=bottoms">Bottoms</a>
+        <button class="nav-close" id="navClose"><i data-lucide="x"></i></button>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Search toggle -->
+        <button class="icon-btn" id="searchToggle" aria-label="Search">
+          <i data-lucide="search"></i>
+        </button>
+        <!-- Cart -->
+        <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+          <i data-lucide="shopping-bag"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Search Bar (hidden by default) -->
+    <div class="search-bar" id="searchBar">
+      <input type="text" id="searchInput" placeholder="Search for hoodies, tees, sweats…" />
+      <button id="searchSubmit"><i data-lucide="search"></i></button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero-bg-text">BIONWAGF</div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">🇿🇦 South African Streetwear</div>
+      <h1 class="hero-title">Wear the<br /><span class="stroke-text">Culture.</span></h1>
+      <p class="hero-sub">Premium drops. Limited pieces. Born in the streets of South Africa.</p>
+      <div class="hero-ctas">
+        <a href="products.html" class="btn btn-primary">Shop New Drops</a>
+        <a href="products.html?category=hoodies" class="btn btn-ghost">View Hoodies</a>
+      </div>
+    </div>
+    <div class="hero-badge">
+      <span>NEW</span>
+      <span>DROP</span>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <i data-lucide="chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ===================== TICKER / ANNOUNCEMENT ===================== -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>FREE SHIPPING ON ORDERS OVER R800</span>
+      <span>★</span>
+      <span>NEW SA FLAG HOODIE IN CAMEL JUST DROPPED</span>
+      <span>★</span>
+      <span>LIMITED PIECES — GET YOURS BEFORE IT SELLS OUT</span>
+      <span>★</span>
+      <span>POP UP DAYS COMING TO MAVUNDLA SQUARE</span>
+      <span>★</span>
+      <span>FREE SHIPPING ON ORDERS OVER R800</span>
+      <span>★</span>
+      <span>NEW SA FLAG HOODIE IN CAMEL JUST DROPPED</span>
+      <span>★</span>
+      <span>LIMITED PIECES — GET YOURS BEFORE IT SELLS OUT</span>
+      <span>★</span>
+    </div>
+  </div>
+
+  <!-- ===================== CATEGORIES ===================== -->
+  <section class="categories section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Shop by Category</h2>
+        <p class="section-sub">Find your next piece</p>
+      </div>
+      <div class="category-grid">
+        <a href="products.html?category=hoodies" class="cat-card cat-hoodies">
+          <div class="cat-img-wrap">
+            <img src="Images\Photo (6).jpeg" alt="Hoodies" loading="lazy" />
+          </div>
+          <div class="cat-label">
+            <span>Hoodies</span>
+            <i data-lucide="arrow-right"></i>
+          </div>
+        </a>
+        <a href="products.html?category=t-shirts" class="cat-card cat-tees">
+          <div class="cat-img-wrap">
+            <img src="Images\Photo (21).jpeg" alt="T-Shirts" loading="lazy" />
+          </div>
+          <div class="cat-label">
+            <span>Tees</span>
+            <i data-lucide="arrow-right"></i>
+          </div>
+        </a>
+        <a href="products.html?category=crewnecks" class="cat-card cat-crews">
+          <div class="cat-img-wrap">
+            <img src="Images\Photo (13).jpeg" alt="Crewnecks" loading="lazy" />
+          </div>
+          <div class="cat-label">
+            <span>Crewnecks</span>
+            <i data-lucide="arrow-right"></i>
+          </div>
+        </a>
+        <a href="products.html?category=bottoms" class="cat-card cat-bottoms">
+          <div class="cat-img-wrap">
+            <img src="Images\Photo (14).jpeg" alt="Bottoms" loading="lazy" />
+          </div>
+          <div class="cat-label">
+            <span>Bottoms</span>
+            <i data-lucide="arrow-right"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED PRODUCTS ===================== -->
+  <section class="featured-products section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title light">Featured Pieces</h2>
+        <a href="products.html" class="see-all">See All <i data-lucide="arrow-right"></i></a>
+      </div>
+      <!-- Products loaded by JS -->
+      <div class="products-grid" id="featuredGrid">
+        <!-- Skeleton loaders -->
+        <div class="product-skeleton"></div>
+        <div class="product-skeleton"></div>
+        <div class="product-skeleton"></div>
+        <div class="product-skeleton"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROMO BANNER ===================== -->
+  <section class="promo-banner">
+    <div class="promo-inner">
+      <div class="promo-text">
+        <div class="promo-eyebrow">Pop Up Day</div>
+        <h2>BIONWAGF<br/>Coming to<br/>Mavundla Square</h2>
+        <p>Find us in person. Try before you buy. Limited stock available on the day.</p>
+        <a href="#newsletter" class="btn btn-primary">Get Notified</a>
+      </div>
+      <div class="promo-graphic">
+        <div class="promo-circle">
+          <span class="promo-big">POP</span>
+          <span class="promo-big">UP</span>
+          <span class="promo-big">DAY</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NEW ARRIVALS ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">New Arrivals</h2>
+        <a href="products.html?filter=new" class="see-all">See All <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="products-grid" id="newArrivalsGrid">
+        <div class="product-skeleton"></div>
+        <div class="product-skeleton"></div>
+        <div class="product-skeleton"></div>
+        <div class="product-skeleton"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BRAND STORY ===================== -->
+  <section class="brand-story section">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-text">
+          <div class="story-eyebrow">Our Story</div>
+          <h2>Built for the<br/><span class="accent">Streets.</span></h2>
+          <p>BIONWAGF was born from a simple idea — that South African streetwear deserves to stand on the world stage. Every stitch, every print, every drop is made with love for the culture.</p>
+          <p>We don't just make clothes. We make statements.</p>
+          <a href="products.html" class="btn btn-outline">Shop the Brand</a>
+        </div>
+        <div class="story-flags">
+          <div class="flag-card">🇿🇦</div>
+          <div class="story-stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">SA Designed</span>
+          </div>
+          <div class="story-stat">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Happy Customers</span>
+          </div>
+          <div class="story-stat">
+            <span class="stat-num">8+</span>
+            <span class="stat-label">Unique Pieces</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NEWSLETTER ===================== -->
+  <section class="newsletter" id="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="nl-text">
+          <h2>Stay in the Loop</h2>
+          <p>New drops, pop-up days, exclusive offers — first to know, first to cop.</p>
+        </div>
+        <form class="nl-form" id="newsletterForm">
+          <input type="email" placeholder="Enter your email address" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p class="nl-disclaimer">No spam. Just drops. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-footer">BION<span>WAGF</span></a>
+          <p>South African streetwear built for the culture. Premium drops. Limited pieces.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram" class="social-link">IG</a>
+            <a href="#" aria-label="TikTok" class="social-link">TT</a>
+            <a href="#" aria-label="Facebook" class="social-link">FB</a>
+            <a href="#" aria-label="Twitter" class="social-link">X</a>
+          </div>
+        </div>
+        <!-- Shop -->
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="products.html?category=hoodies">Hoodies</a></li>
+            <li><a href="products.html?category=t-shirts">T-Shirts</a></li>
+            <li><a href="products.html?category=crewnecks">Crewnecks</a></li>
+            <li><a href="products.html?category=bottoms">Bottoms</a></li>
+          </ul>
+        </div>
+        <!-- Help -->
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Sizing Guide</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Track Your Order</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>📍 Greeytown, KwaZulu-Natal</li>
+            <li>📱 WhatsApp us below</li>
+            <li>🕐 Mon–Sat: 9am–6pm</li>
+          </ul>
+          <div class="payment-icons">
+            <span class="pay-icon">PayFast</span>
+            <span class="pay-icon">Ozow</span>
+            <span class="pay-icon">EFT</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 BIONWAGF Clothing Store. All rights reserved. | South Africa 🇿🇦</p>
+        <p>Prices coming soon — <a href="#" id="footerWhatsapp">enquire via WhatsApp</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== TOAST NOTIFICATION ===================== -->
+  <div class="toast" id="toast">I would like to know more about your products.</div>
+
+  <!-- ===================== WHATSAPP CHAT BUTTON ===================== -->
+  <!-- Replace PHONE_NUMBER with your actual WhatsApp number in international format (no +) -->
+  <a
+    href="https://wa.me/27607817077?text=Hi%20BIONWAGF!%20I%27m%20interested%20in%20your%20clothing.%20Can%20you%20help%20me?"
+    class="whatsapp-btn"
+    id="whatsappBtn"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp"
+  >
+    <!-- WhatsApp SVG icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+    <span class="wa-label">Chat with us</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

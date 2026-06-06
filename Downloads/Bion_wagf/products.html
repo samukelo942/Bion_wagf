@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — BIONWAGF Clothing</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Permanent+Marker&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      <a href="index.html" class="logo">BION<span>WAGF</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Shop</a>
+        <a href="products.html?category=hoodies">Hoodies</a>
+        <a href="products.html?category=t-shirts">Tees</a>
+        <a href="products.html?category=bottoms">Bottoms</a>
+        <button class="nav-close" id="navClose"><i data-lucide="x"></i></button>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchToggle"><i data-lucide="search"></i></button>
+        <a href="cart.html" class="icon-btn cart-btn">
+          <i data-lucide="shopping-bag"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+    <div class="search-bar" id="searchBar">
+      <input type="text" id="searchInput" placeholder="Search products…" />
+      <button id="searchSubmit"><i data-lucide="search"></i></button>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <h1 class="page-title" id="pageTitle">All Products</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / <span id="breadcrumbCat">Shop</span></p>
+    </div>
+  </div>
+
+  <!-- SHOP LAYOUT -->
+  <div class="shop-layout container">
+
+    <!-- Filters Sidebar -->
+    <aside class="filters-sidebar" id="filtersSidebar">
+      <div class="filters-header">
+        <h3>Filter</h3>
+        <button id="clearFilters" class="clear-btn">Clear all</button>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="filter-group">
+        <h4>Category</h4>
+        <label><input type="radio" name="category" value="all" checked /> All</label>
+        <label><input type="radio" name="category" value="hoodies" /> Hoodies</label>
+        <label><input type="radio" name="category" value="t-shirts" /> T-Shirts</label>
+        <label><input type="radio" name="category" value="crewnecks" /> Crewnecks</label>
+        <label><input type="radio" name="category" value="bottoms" /> Bottoms</label>
+      </div>
+
+      <!-- Sort -->
+      <div class="filter-group">
+        <h4>Sort By</h4>
+        <select id="sortSelect">
+          <option value="default">Default</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="rating">Top Rated</option>
+          <option value="new">New Arrivals</option>
+        </select>
+      </div>
+
+      <!-- New Arrivals toggle -->
+      <div class="filter-group">
+        <h4>Availability</h4>
+        <label><input type="checkbox" id="filterNew" /> New Arrivals Only</label>
+        <label><input type="checkbox" id="filterInStock" checked /> In Stock Only</label>
+      </div>
+    </aside>
+
+    <!-- Products Area -->
+    <main class="shop-main">
+      <!-- Top bar -->
+      <div class="shop-topbar">
+        <span id="productCount">Loading…</span>
+        <button class="filter-toggle-btn" id="filterToggle">
+          <i data-lucide="sliders-horizontal"></i> Filters
+        </button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+        <div class="product-skeleton"></div>
+        <div class="product-skeleton"></div>
+        <div class="product-skeleton"></div>
+        <div class="product-skeleton"></div>
+        <div class="product-skeleton"></div>
+        <div class="product-skeleton"></div>
+      </div>
+
+      <!-- Empty state -->
+      <div class="empty-state" id="emptyState" style="display:none;">
+        <i data-lucide="search-x"></i>
+        <h3>No products found</h3>
+        <p>Try changing your filters or search term.</p>
+        <button onclick="document.getElementById('clearFilters').click()" class="btn btn-outline">Clear Filters</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- WHATSAPP BUTTON -->
+  <a href="https://wa.me/27607817077?text=Hi%20BIONWAGF!%20I%27m%20interested%20in%20your%20clothing." class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5 -.669 -.51 -.173 -.008 -.371 -.01 -.57 -.01 -.198 0 -.52 .074 -.792 .372 -.272 .297 -1.04 1.016 -1.04 2.479 0 1.462 １．０６５ ２．８７５ １．２１３ ３．０７４ .１４９ .１９８ ２．０９６ ３．２ ５．０７７ ４．４８７ .７０９ .３０６ １．２６２ .４８９ １．６９４ .６２５ .７１２ .２２７ １．３６ .１９５ １．８７１ .１１８ .５７１ -.０８５ １．７５８ -.７１９ ２．００６ -１．４１３ .２４８ -.６９４ .２４８ -１．２８９ .１７３ -１．４１３ -.０７４ -.１２４ -.２７２ -.１９８ -.５７ -.３４７m-５．４２１ ７．４０３h-．００４a９．８７ ９．８７ ０ ０１-５．０３１-１．３７８l-．３６１-．２１４-３．７４１ .９８２ .９９８ -３．６４８ -．２３５ -．３７４a９．８６ ９．８６ ０ ０１-１．５１ -５．２６c .００₁ -５．４５ ４．４３₆ -９．８₈₄ ９．８₈₈ -９．８₈₄ ₂․₆₄ ₀ ₅․₁₂₂ ₁․₀₃ ₆․₉₈₈ ₂․₈₉₈a９․₈₂伍九․八二伍九․八二伍九․八二伍九․八二伍九․八二伍九․八二伍九․八二伍九․八二伍九․八二伍九․八二伍九․八二伍九․八二伍九․八二伍九․八二伍九․八二伍九․八二伍九․八二伍 nine.…
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

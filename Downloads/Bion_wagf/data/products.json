@@ -1,0 +1,196 @@
+[
+  {
+    "id": 1,
+    "name": "SA Flag Hoodie",
+    "category": "hoodies",
+    "featured": true,
+    "new": true,
+    "inStock": true,
+    "price": 799,
+    "originalPrice": 999,
+    "rating": 4.9,
+    "reviews": 215,
+    "badge": "NEW DROP",
+    "description": "A premium hoodie celebrating South African heritage with bold prints and soft fleece lining.",
+    "image": "Images/Photo (7).jpeg",
+    "images": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=900&q=80",
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=900&q=80"
+    ],
+    "sizes": ["S","M","L","XL"],
+    "colors": ["Black","Camel"],
+    "specs": {
+      "Material": "100% Cotton Fleece",
+      "Fit": "Relaxed",
+      "Origin": "Designed in South Africa"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Street Logo T-Shirt",
+    "category": "t-shirts",
+    "featured": true,
+    "new": false,
+    "inStock": true,
+    "price": 299,
+    "rating": 4.7,
+    "reviews": 124,
+    "badge": "BESTSELLER",
+    "description": "Lightweight streetwear tee with our signature logo print and premium cotton feel.",
+    "image": "Images/Photo (18).jpeg",
+    "images": [
+      "Images/Photo (18).jpeg"
+    ],
+    "sizes": ["S","M","L","XL"],
+    "colors": ["White","Black"],
+    "specs": {
+      "Material": "100% Cotton",
+      "Fit": "Regular",
+      "Care": "Machine wash cold"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Mavundla Crewneck",
+    "category": "crewnecks",
+    "featured": false,
+    "new": true,
+    "inStock": true,
+    "price": 649,
+    "rating": 4.8,
+    "reviews": 98,
+    "badge": "LIMITED",
+    "description": "Soft crewneck with a clean silhouette, designed to go everywhere from street to studio.",
+    "image": "Images/Photo (2).jpeg",
+    "images": [
+      "Images/Photo (2).jpeg"
+    ],
+    "sizes": ["S","M","L","XL"],
+    "colors": ["Grey","Navy"],
+    "specs": {
+      "Material": "French Terry",
+      "Fit": "Modern",
+      "Details": "Ribbed cuffs and hem"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Track Pants",
+    "category": "bottoms",
+    "featured": true,
+    "new": false,
+    "inStock": true,
+    "price": 499,
+    "rating": 4.6,
+    "reviews": 76,
+    "badge": "ICONIC",
+    "description": "Comfort-first track pants with tapered legs and matte finish for street-ready style.",
+    "image": "Images/Photo (1).jpeg",
+    "images": [
+      "Images/Photo (1).jpeg"
+    ],
+    "sizes": ["S","M","L","XL"],
+    "colors": ["Black","Olive"],
+    "specs": {
+      "Material": "Poly-cotton blend",
+      "Fit": "Tapered",
+      "Feature": "Elastic waist with drawcord"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Graphic Tee",
+    "category": "t-shirts",
+    "featured": false,
+    "new": true,
+    "inStock": true,
+    "price": 329,
+    "rating": 4.5,
+    "reviews": 63,
+    "badge": "SA PROUD",
+    "description": "Bold graphic tee celebrating local street culture with a soft premium finish.",
+    "image": "Images/Photo (9).jpeg",
+    "images": [
+      "Images/Photo (9).jpeg"
+    ],
+    "sizes": ["S","M","L","XL"],
+    "colors": ["White","Black"],
+    "specs": {
+      "Material": "100% Cotton",
+      "Fit": "Standard",
+      "Print": "Water-based ink"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Camo Hoodie",
+    "category": "hoodies",
+    "featured": false,
+    "new": false,
+    "inStock": false,
+    "price": 849,
+    "rating": 4.7,
+    "reviews": 89,
+    "badge": "BESTSELLER",
+    "description": "Army-inspired camo hoodie with soft brushed lining and street-smart detailing.",
+    "image": "https://images.unsplash.com/photo-1520975698513-bf93541eefab?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1520975698513-bf93541eefab?w=900&q=80"
+    ],
+    "sizes": ["S","M","L","XL"],
+    "colors": ["Camo"],
+    "specs": {
+      "Material": "Cotton blend",
+      "Fit": "Relaxed",
+      "Feature": "Kangaroo pocket"
+    }
+  },
+  {
+    "id": 7,
+    "name": "SA Skate Shorts",
+    "category": "bottoms",
+    "featured": false,
+    "new": true,
+    "inStock": true,
+    "price": 349,
+    "rating": 4.4,
+    "reviews": 37,
+    "badge": "LIMITED",
+    "description": "Lightweight skate shorts made for summer sessions and city style.",
+    "image": "Images/Photo (8).jpeg",
+    "images": [
+      "Images/Photo (8).jpeg"
+    ],
+    "sizes": ["S","M","L","XL"],
+    "colors": ["Black","Khaki"],
+    "specs": {
+      "Material": "Lightweight cotton",
+      "Fit": "Relaxed",
+      "Feature": "Side pockets"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Classic Logo Sweat",
+    "category": "crewnecks",
+    "featured": false,
+    "new": false,
+    "inStock": true,
+    "price": 579,
+    "rating": 4.8,
+    "reviews": 142,
+    "badge": "ICONIC",
+    "description": "A clean crewneck with premium embroidery and an everyday street-ready look.",
+    "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=900&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=900&q=80"
+    ],
+    "sizes": ["S","M","L","XL"],
+    "colors": ["Grey","Black"],
+    "specs": {
+      "Material": "French Terry",
+      "Fit": "Classic",
+      "Details": "Embroidered logo"
+    }
+  }
+]

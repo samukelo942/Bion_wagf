@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout — BIONWAGF</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Permanent+Marker&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      <a href="index.html" class="logo">BION<span>WAGF</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <button class="nav-close" id="navClose"><i data-lucide="x"></i></button>
+      </nav>
+      <div class="nav-actions">
+        <a href="cart.html" class="icon-btn cart-btn">
+          <i data-lucide="shopping-bag"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- CHECKOUT PAGE -->
+  <main class="checkout-main container">
+
+    <!-- Coming Soon Payment Banner -->
+    <div class="payment-coming-soon">
+      <div class="pcs-icon">🔒</div>
+      <h1>Payment Integration Coming Soon</h1>
+      <p>We're working hard to bring you a seamless, secure checkout experience. For now, please use one of the options below to complete your order.</p>
+
+      <!-- Payment gateways that will be integrated -->
+      <div class="future-gateways">
+        <div class="gateway-card gateway-payfast">
+          <span>PayFast</span>
+          <span class="coming-tag">Soon</span>
+        </div>
+        <div class="gateway-card gateway-ozow">
+          <span>Ozow</span>
+          <span class="coming-tag">Soon</span>
+        </div>
+        <div class="gateway-card gateway-paypal">
+          <span>PayPal</span>
+          <span class="coming-tag">Soon</span>
+        </div>
+        <div class="gateway-card gateway-stripe">
+          <span>Stripe</span>
+          <span class="coming-tag">Soon</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Current Checkout Options -->
+    <div class="checkout-options">
+      <h2>How to Order Right Now</h2>
+
+      <div class="checkout-option-cards">
+        <!-- WhatsApp Option -->
+        <div class="checkout-opt-card checkout-opt-wa">
+          <div class="coc-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+          </div>
+          <h3>Order via WhatsApp</h3>
+          <p>Send us your cart details directly on WhatsApp. We'll confirm availability, final pricing, and arrange payment (EFT, cash, or SnapScan).</p>
+          <a href="#" id="checkoutWaBtn" class="btn btn-wa" target="_blank" rel="noopener noreferrer">
+            WhatsApp Your Order
+          </a>
+        </div>
+
+        <!-- EFT Option -->
+        <div class="checkout-opt-card checkout-opt-eft">
+          <div class="coc-icon">🏦</div>
+          <h3>EFT / Bank Transfer</h3>
+          <p>Contact us via WhatsApp to get our bank details. We'll confirm your order once payment is received.</p>
+          <a href="https://wa.me/27000000000?text=Hi%20BIONWAGF!%20I%27d%20like%20to%20pay%20via%20EFT." class="btn btn-outline" target="_blank">Get Bank Details</a>
+        </div>
+
+        <!-- Pop Up Day Option -->
+        <div class="checkout-opt-card checkout-opt-popup">
+          <div class="coc-icon">📍</div>
+          <h3>Buy at Pop Up Day</h3>
+          <p>Visit us in person at Mavundla Square. Try on pieces and pay cash or card on the day. Follow us for pop-up dates.</p>
+          <a href="index.html#newsletter" class="btn btn-outline">Get Notified</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order Summary Preview -->
+    <div class="checkout-summary-preview">
+      <h3>Your Order</h3>
+      <div id="checkoutItems"><!-- Populated by JS --></div>
+      <div class="checkout-total-row">
+        <span>Estimated Total</span>
+        <span id="checkoutTotal">R0</span>
+      </div>
+      <p class="checkout-disclaimer">* Prices coming soon. Final amount confirmed via WhatsApp.</p>
+    </div>
+
+  </main>
+
+  <!-- Developer Comment: Payment Integration Points -->
+  <!--
+    ========== FUTURE PAYMENT INTEGRATION ==========
+
+    1. PAYFAST (SA - most popular for ZA)
+       - Install: npm install payfast
+       - Add PayFast merchant ID and key to environment variables
+       - Create server endpoint: POST /api/checkout/payfast
+       - Include: amount, item_name, merchant_id, merchant_key, return_url, cancel_url, notify_url
+       - Docs: https://developers.payfast.co.za/
+
+    2. OZOW (SA - instant EFT)
+       - Create POST to Ozow API with basket data
+       - Docs: https://ozow.com/integrations/
+
+    3. PAYPAL
+       - Load PayPal JS SDK: <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=ZAR">
+       - Render PayPal buttons using paypal.Buttons().render('#paypal-button-container')
+       - Docs: https://developer.paypal.com/
+
+    4. STRIPE
+       - npm install @stripe/stripe-js
+       - Create payment intent on backend, confirm on frontend
+       - Docs: https://stripe.com/docs/payments
+
+    CART DATA AVAILABLE:
+    - const cart = JSON.parse(localStorage.getItem('bionwagf_cart')) || []
+    - Pass cart to your payment endpoint as the order items
+    - After success: clear cart, redirect to thank-you page
+  -->
+
+  <!-- WHATSAPP BUTTON -->
+  <a href="https://wa.me/27000000000?text=Hi%20BIONWAGF!%20I%27m%20interested%20in%20your%20clothing." class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+    <span class="wa-label">Chat with us</span>
+  </a>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
